@@ -48,6 +48,13 @@
             </a>
           </li>
         {%- endif -%}
+        {%- if site.leetcode_username -%}
+          <li>
+            <a target="_blank" href="https://leetcode.com/{{ site.leetcode_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
+              <i class="fab fa-linkedin" title="Leetcode Link"></i>
+            </a>
+          </li>
+        {%- endif -%}
         {%- if site.xing_username -%}
           <li>
             <a target="_blank" href="https://www.xing.com/profile/{{ site.xing_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
